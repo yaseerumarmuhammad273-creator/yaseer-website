@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yaseer Umar | 2027</title>
+
+<style>
+
+:root{
+    --bg:#05070d;
+    --panel:#0b101a;
+    --text:#eef5ff;
+    --muted:#9aa8bb;
+    --blue:#38bdf8;
+    --cyan:#22d3ee;
+    --line:rgba(255,255,255,.09);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:
+    radial-gradient(circle at 80% 10%,rgba(34,211,238,.12),transparent 28%),
+    radial-gradient(circle at 10% 40%,rgba(59,130,246,.10),transparent 25%),
+    var(--bg);
+    color:var(--text);
+    line-height:1.6;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.container{
+    width:min(1120px,92%);
+    margin:auto;
+}
+
+
+/* ================= HEADER ================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+
+    background:rgba(5,7,13,.75);
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid var(--line);
+}
+
+nav{
+    height:72px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:1.1rem;
+    font-weight:900;
+    letter-spacing:3px;
+}
+
+.logo span{
+    color:var(--cyan);
+}
+
+.navlinks{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.navlinks a{
+    color:#cbd5e1;
+    transition:.3s;
+}
+
+.navlinks a:hover{
+    color:var(--cyan);
+}
+
+.menu{
+    display:none;
+    background:none;
+    border:1px solid var(--line);
+    color:white;
+    padding:8px 12px;
+    border-radius:10px;
+    font-size:20px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+
+    display:grid;
+    place-items:center;
+
+    padding:120px 0 70px;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:70px;
+    align-items:center;
+}
+
+.eyebrow{
+    color:var(--cyan);
+
+    font-weight:bold;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-size:.8rem;
+}
+
+h1{
+    font-size:clamp(3rem,7vw,6.3rem);
+
+    line-height:.95;
+
+    margin:20px 0;
+}
+
+.accent{
+    color:var(--cyan);
+
+    text-shadow:
+    0 0 25px rgba(34,211,238,.35);
+}
+
+.hero p{
+    max-width:650px;
+
+    color:var(--muted);
+
+    font-size:1.1rem;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.buttons{
+    display:flex;
+
+    gap:14px;
+
+    margin-top:28px;
+
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:13px 20px;
+
+    border-radius:12px;
+
+    border:1px solid var(--line);
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 0 30px rgba(34,211,238,.18);
+}
+
+.btn.primary{
+    background:
+    linear-gradient(
+        135deg,
+        var(--cyan),
+        var(--blue)
+    );
+
+    color:#031018;
+
+    border:none;
+}
+
+
+/* ================= PROFILE PHOTO ================= */
+
+.photo-wrap{
+    position:relative;
+
+    max-width:420px;
+
+    margin:auto;
+}
+
+.photo-wrap::before{
+    content:"";
+
+    position:absolute;
+
+    inset:-18px;
+
+    border:1px solid rgba(34,211,238,.4);
+
+    border-radius:32px;
+
+    transform:rotate(4deg);
+
+    box-shadow:
+    0 0 35px rgba(34,211,238,.18);
+}
+
+.photo{
+    width:100%;
+
+    aspect-ratio:4/5;
+
+    object-fit:cover;
+
+    display:block;
+
+    position:relative;
+
+    border-radius:28px;
+
+    border:1px solid var(--line);
+}
+
+
+/* ================= SECTIONS ================= */
+
+section{
+    padding:100px 0;
+}
+
+.section-title{
+    font-size:2.5rem;
+
+    margin-bottom:10px;
+}
+
+.section-sub{
+    color:var(--muted);
+
+    max-width:700px;
+
+    margin-bottom:35px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-grid{
+    display:grid;
+
+    grid-template-columns:.9fr 1.1fr;
+
+    gap:45px;
+
+    align-items:start;
+}
+
+
+/* ================= TERMINAL ================= */
+
+.terminal{
+
+    background:#020409;
+
+    border:1px solid var(--line);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:
+    0 0 35px rgba(34,211,238,.15);
+
+    font-family:
+    monospace;
+
+    color:#b8f7ff;
+}
+
+.terminal .dim{
+    color:#6b7c91;
+}
+
+.terminal .green{
+    color:#86efac;
+}
+
+.terminal .blue{
+    color:#67e8f9;
+}
+
+
+/* ================= CARDS ================= */
+
+.cards{
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:18px;
+}
+
+.card{
+    background:
+    linear-gradient(
+        180deg,
+        rgba(255,255,255,.045),
+        rgba(255,255,255,.018)
+    );
+
+    border:1px solid var(--line);
+
+    border-radius:20px;
+
+    padding:27px;
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-7px);
+
+    border-color:
+    rgba(34,211,238,.4);
+
+    box-shadow:
+    0 0 35px rgba(34,211,238,.12);
+}
+
+.icon{
+    font-size:30px;
+
+    margin-bottom:12px;
+}
+
+.card h3{
+    margin-bottom:8px;
+}
+
+.card p{
+    color:var(--muted);
+}
+
+
+/* ================= FUTURE TIMELINE ================= */
+
+.timeline{
+
+    border-left:
+    1px solid
+    rgba(34,211,238,.35);
+
+    padding-left:25px;
+}
+
+.item{
+    margin-bottom:30px;
+
+    position:relative;
+}
+
+.item::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-31px;
+
+    top:7px;
+
+    width:11px;
+
+    height:11px;
+
+    border-radius:50%;
+
+    background:var(--cyan);
+
+    box-shadow:
+    0 0 18px var(--cyan);
+}
+
+.item small{
+    color:var(--cyan);
+
+    font-weight:bold;
+}
+
+.item p{
+    color:var(--muted);
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:18px;
+}
+
+.contact-box{
+
+    padding:25px;
+
+    border:1px solid var(--line);
+
+    border-radius:18px;
+
+    background:
+    rgba(255,255,255,.025);
+
+    transition:.3s;
+}
+
+.contact-box:hover{
+
+    border-color:
+    rgba(34,211,238,.4);
+
+    transform:translateY(-3px);
+}
+
+.contact-box span{
+
+    display:block;
+
+    color:var(--muted);
+
+    font-size:.85rem;
+}
+
+.contact-box strong{
+
+    display:block;
+
+    margin-top:5px;
+
+    word-break:break-word;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    border-top:
+    1px solid var(--line);
+
+    padding:30px 0;
+
+    color:var(--muted);
+
+    text-align:center;
+}
+
+
+/* ================= ANIMATION ================= */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(25px);
+
+    transition:.8s;
+}
+
+.reveal.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px){
+
+    .navlinks{
+
+        display:none;
+
+        position:absolute;
+
+        top:72px;
+
+        left:0;
+
+        right:0;
+
+        background:#070a11;
+
+        border-bottom:
+        1px solid var(--line);
+
+        padding:20px 4%;
+
+        flex-direction:column;
+    }
+
+    .navlinks.open{
+        display:flex;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .hero-grid{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+    }
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+    }
+
+    .contact{
+
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+
+        padding-top:120px;
+    }
+
+    .photo-wrap{
+
+        max-width:330px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<nav class="container">
+
+<a href="#home" class="logo">
+YASEER<span>.DEV</span>
+</a>
+
+<button class="menu" id="menu">
+☰
+</button>
+
+<ul class="navlinks" id="navlinks">
+
+<li>
+<a href="#home">Home</a>
+</li>
+
+<li>
+<a href="#about">About</a>
+</li>
+
+<li>
+<a href="#hobbies">Hobbies</a>
+</li>
+
+<li>
+<a href="#future">Future</a>
+</li>
+
+<li>
+<a href="#contact">Contact</a>
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+
+<div class="reveal">
+
+<div class="eyebrow">
+Personal Portfolio • 2027
+</div>
+
+
+<h1>
+
+Hi, I'm
+
+<span class="accent">
+Yaseer Umar.
+</span>
+
+</h1>
+
+
+<p>
+
+A student, coder and technology enthusiast
+building skills today for a future in
+<strong>cybersecurity.</strong>
+
+Welcome to my digital space.
+
+</p>
+
+
+<div class="buttons">
+
+<a
+href="#about"
+class="btn primary">
+
+Explore My Journey
+
+</a>
+
+
+<a
+href="#contact"
+class="btn">
+
+Contact Me
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="photo-wrap reveal">
+
+<img
+src="profile.jpg"
+class="photo"
+alt="Yaseer Umar">
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="container">
+
+
+<h2 class="section-title reveal">
+About Me
+</h2>
+
+
+<p class="section-sub reveal">
+
+Learning, building and preparing for
+the world of technology.
+
+</p>
+
+
+
+<div class="about-grid">
+
+
+<div class="terminal reveal">
+
+<div>
+<span class="dim">$</span>
+whoami
+</div>
+
+<br>
+
+<div class="green">
+Yaseer Umar Muhammad
+</div>
+
+<div>
+<span class="dim">role:</span>
+Student & Future Cybersecurity Professional
+</div>
+
+<div>
+<span class="dim">class:</span>
+SSS 1
+</div>
+
+<div>
+<span class="dim">school:</span>
+Al-Ihsan International School
+</div>
+
+<div>
+<span class="dim">focus:</span>
+Coding • Cybersecurity • Technology
+</div>
+
+<div>
+<span class="dim">year:</span>
+2027
+</div>
+
+<br>
+
+<div>
+<span class="blue">$</span>
+keep_learning --always
+</div>
+
+</div>
+
+
+
+<div class="reveal">
+
+<h3>
+My Story
+</h3>
+
+<p style="color:var(--muted);margin-top:10px">
+
+I am currently a student in SSS 1 at
+Al-Ihsan International School.
+
+I enjoy exploring computers, coding and
+new technology.
+
+My goal is to keep learning, build useful
+projects and develop strong cybersecurity
+skills.
+
+</p>
+
+
+<div class="buttons">
+
+<a
+href="#hobbies"
+class="btn">
+
+My Interests
+
+</a>
+
+<a
+href="#future"
+class="btn">
+
+My Future Goal
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= HOBBIES ================= -->
+
+<section id="hobbies">
+
+<div class="container">
+
+
+<h2 class="section-title reveal">
+
+Hobbies & Interests
+
+</h2>
+
+
+<p class="section-sub reveal">
+
+Things I enjoy while learning and growing
+in technology.
+
+</p>
+
+
+
+<div class="cards">
+
+
+<article class="card reveal">
+
+<div class="icon">
+💻
+</div>
+
+<h3>
+Coding
+</h3>
+
+<p>
+
+Creating websites, experimenting with code
+and learning how software works.
+
+</p>
+
+</article>
+
+
+
+<article class="card reveal">
+
+<div class="icon">
+🔐
+</div>
+
+<h3>
+Cybersecurity
+</h3>
+
+<p>
+
+Learning defensive security, privacy,
+networks and responsible security practices.
+
+</p>
+
+</article>
+
+
+
+<article class="card reveal">
+
+<div class="icon">
+🎨
+</div>
+
+<h3>
+Web Design
+</h3>
+
+<p>
+
+Designing modern interfaces, responsive
+pages and creative digital experiences.
+
+</p>
+
+</article>
+
+
+
+<article class="card reveal">
+
+<div class="icon">
+🧠
+</div>
+
+<h3>
+Learning
+</h3>
+
+<p>
+
+Exploring new technical ideas and
+continuously improving my skills.
+
+</p>
+
+</article>
+
+
+
+<article class="card reveal">
+
+<div class="icon">
+🛠️
+</div>
+
+<h3>
+Building Projects
+</h3>
+
+<p>
+
+Turning ideas into projects that help me
+understand technology through practice.
+
+</p>
+
+</article>
+
+
+
+<article class="card reveal">
+
+<div class="icon">
+🚀
+</div>
+
+<h3>
+Innovation
+</h3>
+
+<p>
+
+Thinking about how technology can solve
+problems and create useful tools.
+
+</p>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= FUTURE ================= -->
+
+<section id="future">
+
+<div class="container">
+
+
+<h2 class="section-title reveal">
+
+My Future
+
+</h2>
+
+
+<p class="section-sub reveal">
+
+The direction I want to grow toward.
+
+</p>
+
+
+
+<div class="timeline">
+
+
+<div class="item reveal">
+
+<small>
+01 • NOW
+</small>
+
+<h3>
+Build Strong Foundations
+</h3>
+
+<p>
+
+Improve programming, web development,
+computer fundamentals and problem-solving.
+
+</p>
+
+</div>
+
+
+
+<div class="item reveal">
+
+<small>
+02 • NEXT
+</small>
+
+<h3>
+Explore Cybersecurity
+</h3>
+
+<p>
+
+Study networking, operating systems,
+secure coding, digital privacy and
+ethical security testing in authorized
+environments.
+
+</p>
+
+</div>
+
+
+
+<div class="item reveal">
+
+<small>
+03 • FUTURE
+</small>
+
+<h3>
+Become a Cybersecurity Professional
+</h3>
+
+<p>
+
+Develop the knowledge and experience
+needed to help protect systems,
+applications and people from cyber threats.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<div class="container">
+
+
+<h2 class="section-title reveal">
+
+Let's Connect
+
+</h2>
+
+
+<p class="section-sub reveal">
+
+For school projects, technology discussions
+and other appropriate enquiries.
+
+</p>
+
+
+
+<div class="contact">
+
+
+<a
+class="contact-box reveal"
+href="mailto:yaseerumarmuhammad273@gmail.com">
+
+<span>
+Email
+</span>
+
+<strong>
+yaseerumarmuhammad273@gmail.com
+</strong>
+
+</a>
+
+
+
+<a
+class="contact-box reveal"
+href="tel:07011200806">
+
+<span>
+Phone
+</span>
+
+<strong>
+07011200806
+</strong>
+
+</a>
+
+
+
+<div class="contact-box reveal">
+
+<span>
+School
+</span>
+
+<strong>
+Al-Ihsan International School
+</strong>
+
+</div>
+
+
+
+<div class="contact-box reveal">
+
+<span>
+Current Level
+</span>
+
+<strong>
+SSS 1 Student
+</strong>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+© 2027 Yaseer Umar
+• Built with curiosity, code & ambition.
+
+</div>
+
+</footer>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+const menu =
+document.getElementById("menu");
+
+const links =
+document.getElementById("navlinks");
+
+
+menu.addEventListener("click", () => {
+
+    links.classList.toggle("open");
+
+});
+
+
+document
+.querySelectorAll(".navlinks a")
+.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        links.classList.remove("open");
+
+    });
+
+});
+
+
+
+const observer =
+new IntersectionObserver(
+
+(entries) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            entry.target
+            .classList
+            .add("show");
+
+        }
+
+    });
+
+},
+
+{
+    threshold:.12
+}
+
+);
+
+
+document
+.querySelectorAll(".reveal")
+.forEach(element => {
+
+    observer.observe(element);
+
+});
+
+</script>
+
+
+</body>
+</html>

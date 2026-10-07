@@ -1,5 +1,7 @@
 README — Yaseer Umar 2027 Personal Website
 Welcome to the personal portfolio website of Yaseer Umar Muhammad.
+
+
 👤 About Yaseer
 Name: Yaseer Umar Muhammad
 School: Al-Ihsan International School
@@ -7,6 +9,8 @@ Class: SSS 1
 Main hobby: Coding
 Other interests: Cybersecurity, web design, learning, building projects, and technology
 Future goal: Become a cybersecurity professional
+
+
 ✨ Website Features
 Modern futuristic dark design
 Cyan/blue technology theme
@@ -21,9 +25,13 @@ Email and phone links
 Mobile-responsive navigation
 Scroll animations
 Responsive design for phones, tablets, and computers
+
+
 📁 Main File
 Yaseer_Umar_2027_website_with_image.html
 The profile photo is embedded directly inside the HTML, so you don't need a separate image file.
+
+
 🚀 How to Open
 Windows
 Download the HTML file.
@@ -38,6 +46,8 @@ Edit the code.
 Save with Ctrl + S.
 Open the file in Chrome.
 You can also install the Live Server extension in VS Code.
+
+
 📧 Contact
 Email:
 yaseerumarmuhammad273@gmail.com
@@ -54,9 +64,13 @@ CSS gradients
 CSS transitions
 Intersection Observer API
 Embedded Base64 image
+
+
 🔐 Cybersecurity
 The cybersecurity content is intended for responsible learning, defensive security, privacy, networking, secure coding, and authorized security testing.
 Only test systems when you have permission to do so.
+
+
 🌐 Publishing
 This is a static HTML website and can be published using a static website hosting service.
 Before publishing publicly, consider whether you want your phone number and email address visible to everyone.
